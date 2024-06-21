@@ -1,0 +1,103 @@
+@use '../../SASS/Variaveis.scss' as *;
+
+.InformacoesPagamento {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    place-items: center;
+
+
+    button{
+        @include botao-estilo;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border: none;
+        width: 524px;
+        height: 50px;
+    }
+
+    button:hover{
+        @include botao-houver;
+    }
+  
+    .InformacoesPessoais {
+      margin-top: 50px;
+      width: 80%;
+      font-weight: 300;
+  
+      h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: 300;
+      }
+  
+      .Informacao {
+        width: 524px;
+        height: 27px;
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 10px;
+        border: 2px solid #7A7A7A;
+        outline: none;
+  
+        &::placeholder {
+          padding-left: 8px; 
+        }
+      }
+  
+      .Formulario {
+        input[type='radio'] {
+          width: 15px;
+          height: 15px; 
+          border-radius: 4px; 
+          -webkit-appearance: none; 
+          -moz-appearance: none; 
+          appearance: none; 
+          background-color: #fff;
+          border: 2px solid #7A7A7A;
+          box-shadow: 1px 1px 3px black;
+          cursor: pointer;
+  
+          &:checked {
+            background-color: rgb(12,112,242); 
+          }
+        }
+  
+        label {
+          margin-left: 5px; 
+        }
+      }
+    }
+  
+    .Total {  
+      width: 80%;
+      height: 100%;
+    }
+
+    .TotalEstilos{
+        background-color: #EEEEEE;
+        box-shadow: 1px 3px 2px rgb(128, 123, 123);
+        margin-top: 70px;
+        padding: 32px;
+    }
+
+    h2, h3{
+        font-weight: 300;
+    }
+
+    p{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .Valor{
+        display: flex;
+        justify-content: space-between;
+
+        p{
+            margin-right: 10px;
+        }
+
+        
+    }
+  }
+  

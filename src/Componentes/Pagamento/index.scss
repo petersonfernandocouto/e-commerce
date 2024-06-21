@@ -1,0 +1,124 @@
+@use '../../SASS/Variaveis.scss' as *;
+
+.Pai {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    place-items: center;
+
+    .ProdutoSelecionado {
+        margin-top: 120px;
+        width: 50%; // Ajuste a largura conforme necessário 
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .InformacoesProdutos {
+
+        width: 75%; // Ajuste a largura conforme necessário
+
+        h1{
+            text-align: center;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .Comprar{
+            border: none;
+            @include botao-estilo;
+            margin-top: 40px;
+            width: 100%;
+        }
+
+        .Comprar:hover{
+            @include botao-houver;
+        }
+
+        
+    }
+}
+
+.ProSelect{
+    border-radius: 20px;
+    border: 1px solid #B7B7B7;
+    width: 350px;
+
+    .IMGSelecionada{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 350px;
+        height: 245px;
+    }
+
+    h3{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-weight: 300;
+    }
+    
+
+}
+
+
+.Descricao{
+
+    margin-top: 40px;
+
+    h3{
+        font-weight: 400;
+    }
+
+    h4{
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    
+}
+
+
+.InformacoesProdutos{
+
+    
+
+    h2{
+        margin-top: 40px;
+    }
+
+    h3{
+        padding-top: 10px;
+        font-weight: 400;
+    }
+
+    .Cor{
+        display: flex;
+    }
+
+    .tamanhos{
+        display: flex;
+
+        h3{
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 10px;
+            height: 40px;
+            width: 50px;
+            margin-left: 10px;
+        }
+
+        
+    }
+}
+
+.ColorRoupa{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    height: 40px;
+    width: 50px;
+    margin-left: 10px;
+}
+

@@ -1,0 +1,10 @@
+@use '../../SASS/Variaveis.scss' as *;
+
+.Header{
+    background-color: $Cor-Header;
+
+    .Logo{
+        padding: 17px;
+        padding-left: 25px;
+    }
+}

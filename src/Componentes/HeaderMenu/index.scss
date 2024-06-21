@@ -1,0 +1,45 @@
+@use '../../SASS/Variaveis.scss' as *;
+
+.HeaderMenu {
+  display: flex;
+  align-items: center; // Alinha os itens verticalmente ao centro
+  background-color: $Cor-Header;
+  padding: 0 25px; // Adiciona padding horizontal
+
+  .LogoHeader {
+    width: 140px;
+    padding: 17px 0;
+  }
+
+  .Listas {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    margin: 0;
+    cursor: pointer;
+
+    li {
+      padding-left: 100px;
+    }
+
+    li:hover {
+      color: rgb(12, 112, 242);
+    }
+  }
+
+  .Cart {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    h2 {
+      font-weight: 400;
+    }
+
+    .icone {
+      font-size: 33px;
+      padding-left: 10px;
+      padding-right: 12px;
+    }
+  }
+}

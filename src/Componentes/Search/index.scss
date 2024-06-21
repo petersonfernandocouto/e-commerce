@@ -1,0 +1,49 @@
+@use '../../SASS/Variaveis.scss' as *;
+
+.InputPesquisa {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  padding-top: 40px;
+  margin: 0 auto;
+
+  .iconePesquisa {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    padding-top: 40px;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #ccc;
+  }
+
+  .estiloInput {
+    width: 100%;
+    padding: 10px 10px 10px 40px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
+
+.userAndHeart{
+    display: flex;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-left: 20px;
+
+    .Heart{
+        margin-left: 12px;
+    }
+}
+
+
+.Home__Card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px;
+}

@@ -1,0 +1,18 @@
+$Cor-Header: rgb(235,235,235);
+$Cor-Botao: rgb(12,112,242);
+
+@mixin botao-estilo () {
+    border-radius: 10px;
+    padding: 12px;
+    background-color: $Cor-Botao;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+@mixin botao-houver() {
+    background: blue;
+}
