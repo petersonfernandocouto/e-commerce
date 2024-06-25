@@ -6,8 +6,8 @@ function FormaPagamento( {data} ) {
 
 
         const Compra = () => {
-          alert(`Produto: ${data.Titulo}, 
-                 Valor: ${data.Preco},
+          alert(`Produto: ${data.Titulo} 
+                 Valor: ${data.Preco}
                  Compra Finalizada com sucesso!.`);
         };
 
