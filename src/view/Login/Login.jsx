@@ -47,7 +47,6 @@ function Login() {
 
         </Link>
         
-{/*Modificar o link, colocar botão */}
         
       </form>
 

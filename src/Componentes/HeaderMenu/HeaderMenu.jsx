@@ -26,7 +26,7 @@ function Menu() {
 
             <div className='Cart'>
 
-                <h2>Meu Carrinho</h2>
+                
 
                 <BsCart3 className='icone' />
 
